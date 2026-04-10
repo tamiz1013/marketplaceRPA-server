@@ -1,0 +1,6 @@
+# Dependencies
+node_modules/
+
+
+# Sensitive / local config
+.env

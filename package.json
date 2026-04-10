@@ -1,0 +1,17 @@
+{
+  "name": "marketplace-bot-license-server",
+  "version": "1.0.0",
+  "description": "License validation server for Marketplace Bot",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.4.1"
+  }
+}
