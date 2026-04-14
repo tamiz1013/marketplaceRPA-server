@@ -8,7 +8,7 @@ const jwt      = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
 const app  = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3008;
 
 const MONGO_URI             = process.env.MONGO_URI;
 const JWT_SECRET            = process.env.JWT_SECRET;
@@ -385,7 +385,7 @@ app.post('/api/webhook', async (req, res) => {
 // --- Start ------------------------------------------------------------------
 
 connectDB().then(() => {
-    app.listen(PORT, () => console.log('License server listening on port ' + PORT));
+    app.listen(PORT, "0.0.0.0", () => console.log('License server listening on port ' + PORT));
 }).catch(err => {
     console.error('MongoDB connection failed:', err.message);
     process.exit(1);

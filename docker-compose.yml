@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  myproject:
+    build: .
+    container_name: EmailReader
+    ports:
+      - "3009:3008"
+    restart: always
+
