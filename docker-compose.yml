@@ -3,7 +3,7 @@ version: '3.8'
 services:
   myproject:
     build: .
-    container_name: EmailReader
+    container_name: marketplaceRPA-server
     ports:
       - "3009:3008"
     restart: always
